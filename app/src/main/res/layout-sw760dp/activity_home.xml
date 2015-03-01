@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="12dp"
+        android:background="@android:color/white"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:text="@string/t_home"
+            android:paddingLeft="16dp"/>
+
+        <View
+            android:background="#CCCCCC"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <FrameLayout
+            android:id="@+id/left_container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="12dp"
+        android:background="@android:color/white"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:text="@string/t_favorites"
+            android:paddingLeft="16dp"/>
+
+        <View
+            android:background="#CCCCCC"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <FrameLayout
+            android:id="@+id/right_container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
